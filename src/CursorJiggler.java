@@ -16,7 +16,7 @@ public class CursorJiggler {
         JComboBox<String> jComboBox = new JComboBox<>(timeIntervals);
 
         // Icon
-        ImageIcon icon = new ImageIcon("src/assets/CJ.png");
+        ImageIcon icon = new ImageIcon(CursorJiggler.class.getResource("/assets/CJ.png"));
         f.setIconImage(icon.getImage());
 
         Random random = new Random();
