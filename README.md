@@ -1,16 +1,22 @@
 # Cursor Jiggler
 
-A small desktop utility that periodically moves the mouse cursor to help prevent an idle session from being detected while you are working locally.
+A small Java Swing desktop utility that moves the mouse cursor at a configurable interval. It can be useful for keeping a computer awake during long-running tasks when that behavior is permitted.
 
-## Repository contents
+## Features
 
-- `src/` — application source code
-- `out/` — generated build output (kept in the repository currently)
+- Simple Swing interface
+- Configurable cursor movement interval (from 5 seconds up to 5 minutes)
+- An `OFF` option to stop cursor movement
 
-## Getting started
+## Requirements
 
-Open the project in the IDE used to create it and inspect the run configuration. The repository does not yet include a portable build or setup guide, so exact build steps may depend on your local environment.
+- Java Development Kit (JDK)
+- A graphical desktop environment
+
+## Run
+
+Open the project in an IDE such as IntelliJ IDEA and run `CursorJiggler.java`. The icon is loaded from the classpath so it can work from a packaged JAR when the asset is included as a resource.
 
 ## Notes
 
-Use this utility only on systems where you are permitted to do so and in accordance with your organization's policies.
+Cursor movement can interrupt other work. Use this utility only where permitted, and do not use it to bypass workplace attendance, activity-monitoring, or security policies.
